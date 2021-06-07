@@ -135,7 +135,7 @@ def __create_pyramid_features(backbone_layers, pyramid_levels, feature_size=256)
     Returns
         output_layers : A dict of feature levels. P3, P4, P5, P6 are always included. P2, P6, P7 included if in use.
     """
-
+    print(backbone_layers)
     output_layers = {}
 
     # upsample C5 to get P5 from the FPN paper
